@@ -3,29 +3,29 @@
 int main(void) {
 	int num1;
   int num2;
-  int cal;
+  char cal;
   
-  printf ("Please choose your operator \n1. +\n 2. -\n3. *\n4. /\n");
-  scanf ("%d",cal);
+  printf ("Please choose your operator (+, -, *, / : ");
+  scanf ("%c",&cal);
   
   printf ("Please enter two numbers");
-  scanf ("%d %d",num1,num2);
+  scanf ("%d %d",&num1,&num2);
   
   switch(cal){
-  case 1 : 
-          printf("total = %d",num1 + num2);
+  case '+' : 
+          printf("%d + %d = %d",num1,num2,num1 + num2);
           break;
           
-  case 2 :
-          printf("total = %d",num1 - num2);
+  case '-' :
+          printf("%d - %d = %d",num1,num2,num1 - num2);
           break;
   
-  case 3 :
-          printf("total = %d",num1 * num2);
+  case '*' :
+          printf("%d * %d = %d",num1,num2,num1 * num2);
           break;
   
-  case 4 : 
-         printf("total = %d",num1 / num2);
+  case '/' : 
+         printf("%d / %d = %d",num1,num2,num1 / num2);
          break;
   
   default :
